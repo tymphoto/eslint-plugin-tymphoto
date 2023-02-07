@@ -1,0 +1,1 @@
+# eslint_tymphoto_plugin
