@@ -38,7 +38,7 @@ ruleTester.run("public-api-imports", rule, {
       options: aliasOptions,
     },
     {
-      filename: 'C:\\Users\\tim\\Desktop\\javascript\\production_project\\src\\entities\\file.test.ts',
+      filename: '/Users/tim/Desktop/javascript/production_project/src/entities/file.test.ts',
       code: "import { addCommentFormActions, addCommentFormReducer } from '@/entities/Article/testing'",
       errors: [],
       options: [{
@@ -47,7 +47,7 @@ ruleTester.run("public-api-imports", rule, {
       }],
     },
     {
-      filename: 'C:\\Users\\tim\\Desktop\\javascript\\production_project\\src\\entities\\StoreDecorator.tsx',
+      filename: '/Users/tim/Desktop/javascript/production_project/src/entities/StoreDecorator.tsx',
       code: "import { addCommentFormActions, addCommentFormReducer } from '@/entities/Article/testing'",
       errors: [],
       options: [{
@@ -64,7 +64,7 @@ ruleTester.run("public-api-imports", rule, {
       options: aliasOptions,
     },
     {
-      filename: 'C:\\Users\\tim\\Desktop\\javascript\\production_project\\src\\entities\\StoreDecorator.tsx',
+      filename: '/Users/tim/Desktop/javascript/production_project/src/entities/StoreDecorator.tsx',
       code: "import { addCommentFormActions, addCommentFormReducer } from '@/entities/Article/testing/file.tsx'",
       errors: [{message: 'Абсолютный импорт разрешен только из Public API (index.ts)'}],
       options: [{
@@ -73,7 +73,7 @@ ruleTester.run("public-api-imports", rule, {
       }],
     },
     {
-      filename: 'C:\\Users\\tim\\Desktop\\javascript\\production_project\\src\\entities\\forbidden.ts',
+      filename: '/Users/tim/Desktop/javascript/production_project/src/entities/forbidden.ts',
       code: "import { addCommentFormActions, addCommentFormReducer } from '@/entities/Article/testing'",
       errors: [{message: 'Тестовые данные необходимо импортировать из publicApi/testing.ts'}],
       options: [{

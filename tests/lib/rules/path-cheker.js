@@ -22,7 +22,7 @@ const ruleTester = new RuleTester({
 ruleTester.run("path-checker", rule, {
   valid: [
     {
-      filename: 'C:\\Users\\tim\\Desktop\\javascript\\production_project\\src\\entities\\Article',
+      filename: '/Users/tim/Desktop/javascript/production_project/src/entities/Article',
       code: "import { addCommentFormActions, addCommentFormReducer } from '../../model/slices/addCommentFormSlice'",
       errors: [],
     },
@@ -30,7 +30,7 @@ ruleTester.run("path-checker", rule, {
 
   invalid: [
     {
-      filename: 'C:\\Users\\tim\\Desktop\\javascript\\production_project\\src\\entities\\Article',
+      filename: '/Users/tim/Desktop/javascript/production_project/src/entities/Article',
       code: "import { addCommentFormActions, addCommentFormReducer } from '@/entities/Article/model/slices/addCommentFormSlice'",
       errors: [{ message: "В рамках одного слайса все пути должны быть относительными"}],
       options: [
@@ -40,7 +40,7 @@ ruleTester.run("path-checker", rule, {
       ]
     },
     {
-      filename: 'C:\\Users\\tim\\Desktop\\javascript\\production_project\\src\\entities\\Article',
+      filename: '/Users/tim/Desktop/javascript/production_project/src/entities/Article',
       code: "import { addCommentFormActions, addCommentFormReducer } from 'entities/Article/model/slices/addCommentFormSlice'",
       errors: [{ message: "В рамках одного слайса все пути должны быть относительными"}],
     },
