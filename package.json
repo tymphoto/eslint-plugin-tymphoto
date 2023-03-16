@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-tymphoto-plugin",
-  "version": "0.0.14",
+  "version": "0.0.15",
   "description": "plugin for habr 2.0",
   "keywords": [
     "eslint",
