@@ -1,4 +1,4 @@
-# feature sliced relative path checker (`path-cheker`)
+# feature sliced relative path checker (`path-checker`)
 
 Please describe the origin of the rule here.
 
